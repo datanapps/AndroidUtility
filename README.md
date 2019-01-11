@@ -7,6 +7,8 @@ This library contain:
 2. Snackbar
 3. Toast
 4. CollectionUtils
+5. AppUtils
+6. DateUtils
 
 # How to integrate:
 
