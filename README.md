@@ -15,6 +15,8 @@ This library contain:
 3. Now ready to use basics of android
 
 =============================================================================
+# How to use in your application:
+=============================================================================
 # Logcat
 
 For debug :
@@ -46,3 +48,14 @@ Benifits:
 1. A single class have multiple function.
 2. Handling null pointer
 2. if given activity is is null or context then no crash and it will show toast.
+
+=============================================================================
+
+# Toast
+
+DNAToast.show(this, " this is test message");
+
+Benifits:
+1. A single class have multiple function.
+2. Handling null pointer
+
