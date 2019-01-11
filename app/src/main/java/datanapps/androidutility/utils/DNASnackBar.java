@@ -6,9 +6,9 @@ import android.view.View;
 
 
 /*
-* To implement this file make sure in application gradle file you added google design dependency
-*   implementation "com.android.support:design:28.0.0"
-* */
+ * To implement this file make sure in application gradle file you added google design dependency
+ *   implementation "com.android.support:design:28.0.0"
+ * */
 
 /*
  *
@@ -20,7 +20,16 @@ import android.view.View;
 
 public class DNASnackBar {
 
-       public static void show(Activity activity, String msg) {
+
+    /*
+     * This included because, sonar raise create bug each class should have constructor
+     * */
+
+    DNASnackBar() {
+        // nothing to do here
+    }
+
+    public static void show(Activity activity, String msg) {
         Snackbar
                 .make(activity.getWindow().getDecorView().findViewById(android.R.id.content), msg, Snackbar.LENGTH_LONG).show();
     }

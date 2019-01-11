@@ -12,8 +12,11 @@ import java.util.Collection;
  * */
 public final class CollectionUtils {
 
+    /*
+    * This included because, sonar raise create bug each class should have constructor
+    * */
     private CollectionUtils() {
-        // protected constructor
+        // nothing to do here
     }
 
     public static boolean isNotEmpty(Collection<?> collection) {

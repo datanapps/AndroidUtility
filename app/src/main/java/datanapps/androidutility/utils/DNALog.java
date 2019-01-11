@@ -13,7 +13,13 @@ import datanapps.androidutility.BuildConfig;
 public class DNALog {
 
     private static String TAG = "datanapps";
+    /*
+     * This included because, sonar raise create bug each class should have constructor
+     * */
 
+    DNALog(){
+        // nothing to do here
+    }
 
     /*
     * Debug
@@ -24,21 +30,27 @@ public class DNALog {
         }
     }
 
-
+    /*
+     * ERROR
+     * */
     public static void e(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.e(TAG,  msg);
         }
     }
 
-
+    /*
+     * INFO
+     * */
     public static void i(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.i(TAG,  msg);
         }
     }
 
-
+/*
+* VERBOSE
+* */
     public static void v(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.v(TAG,  msg);
