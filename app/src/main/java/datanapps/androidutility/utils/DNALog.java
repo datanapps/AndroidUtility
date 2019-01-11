@@ -1,6 +1,8 @@
 package datanapps.androidutility.utils;
 
 
+import android.text.TextUtils;
+
 import datanapps.androidutility.BuildConfig;
 
 
@@ -26,7 +28,7 @@ public class DNALog {
     * */
     public static void d(String msg) {
         if (BuildConfig.DEBUG) {
-            android.util.Log.d(TAG, msg);
+            android.util.Log.d(TAG, validateString(msg));
         }
     }
 
@@ -35,7 +37,7 @@ public class DNALog {
      * */
     public static void e(String msg) {
         if (BuildConfig.DEBUG) {
-            android.util.Log.e(TAG,  msg);
+            android.util.Log.e(TAG,  validateString(msg));
         }
     }
 
@@ -44,7 +46,7 @@ public class DNALog {
      * */
     public static void i(String msg) {
         if (BuildConfig.DEBUG) {
-            android.util.Log.i(TAG,  msg);
+            android.util.Log.i(TAG,  validateString(msg));
         }
     }
 
@@ -53,8 +55,16 @@ public class DNALog {
 * */
     public static void v(String msg) {
         if (BuildConfig.DEBUG) {
-            android.util.Log.v(TAG,  msg);
+            android.util.Log.v(TAG,  validateString(msg));
         }
+    }
+
+
+    private static String validateString(String msg){
+      if(msg==null){
+          return "null";
+      }
+     return msg;
     }
 
 

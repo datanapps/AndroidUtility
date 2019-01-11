@@ -1,8 +1,11 @@
 package datanapps.androidutility.utils;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.design.widget.Snackbar;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 /*
@@ -30,17 +33,41 @@ public class DNASnackBar {
     }
 
     public static void show(Activity activity, String msg) {
-        Snackbar
-                .make(activity.getWindow().getDecorView().findViewById(android.R.id.content), msg, Snackbar.LENGTH_LONG).show();
+
+        if (activity != null) {
+            Snackbar
+                    .make(activity.getWindow().getDecorView().findViewById(android.R.id.content), validateString(msg), Snackbar.LENGTH_LONG).show();
+
+        }
+    }
+
+    public static void show(Context activity, String msg) {
+
+        if (activity != null) {
+            if (activity instanceof Activity) {
+                show(activity, msg);
+            } else {
+                Toast.makeText(activity, validateString(msg), Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
 
     public static void show(Activity activity, String msg, String actionText, View.OnClickListener clickListener) {
+        if (activity != null) {
+            Snackbar
+                    .make(activity.getWindow().getDecorView().findViewById(android.R.id.content), validateString(msg), Snackbar.LENGTH_LONG)
+                    .setAction(actionText, clickListener).show();
+        }
 
-        Snackbar
-                .make(activity.getWindow().getDecorView().findViewById(android.R.id.content), msg, Snackbar.LENGTH_LONG)
-                .setAction(actionText, clickListener).show();
+    }
 
+
+    private static String validateString(String msg) {
+        if (msg == null) {
+            return "null";
+        }
+        return msg;
     }
 
 }

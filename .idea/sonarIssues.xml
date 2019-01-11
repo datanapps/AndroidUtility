@@ -33,12 +33,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/DNAToast.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/Log.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/SnackBar.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/dialogs/Dialogs.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/main/ugc/UGCActivity.java">
           <value>
             <set />
           </value>
@@ -54,6 +69,16 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/layout/fragment_ugc_user.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/layout/layout_bottom_sheet_media_picker.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/values/colors.xml">
           <value>
             <set />
           </value>
