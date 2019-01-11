@@ -10,12 +10,12 @@ import java.util.Collection;
  * 11/01/2019
  *
  * */
-public final class CollectionUtils {
+public final class DNACollectionUtils {
 
     /*
     * This included because, sonar raise create bug each class should have constructor
     * */
-    private CollectionUtils() {
+    private DNACollectionUtils() {
         // nothing to do here
     }
 
