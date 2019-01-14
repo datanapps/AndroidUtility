@@ -35,8 +35,9 @@ DNALog.v("this is debug message");
 
 
 Benifits:
-1. This log will work only in debug application.
-2. It will give you more information then simple log.
+1. its provide support in JAVA as well as KOTLIN
+2. This log will work only in debug application.
+3. It will give you more information then simple log.
 
 =============================================================================
 
@@ -47,9 +48,10 @@ DNASnackBar.show( this," this is test message");
 
 
 Benifits:
-1. A single class have multiple function.
-2. Handling null pointer
-2. if given activity is is null or context then no crash and it will show toast.
+1. its provide support in JAVA as well as KOTLIN
+2. A single class have multiple function.
+3. Handling null pointer
+4. if given activity is is null or context then no crash and it will show toast.
 
 =============================================================================
 
@@ -58,6 +60,50 @@ Benifits:
 DNAToast.show(this, " this is test message");
 
 Benifits:
-1. A single class have multiple function.
-2. Handling null pointer
+1. its provide support in JAVA as well as KOTLIN
+2. A single class have multiple function.
+3. Handling null pointer
 
+=============================================================================
+
+# CollectionUtils
+
+ List<T> mediaList = new ArrayList();
+        if (DNACollectionUtils.isEmpty(mediaList)) {
+            // do your stuff 
+        }
+
+        if (DNACollectionUtils.isNotEmpty(mediaList)) {
+            // do your stuff 
+        }
+        
+   Benifits:
+1. its provide support in JAVA as well as KOTLIN
+2. It will work for all collections like list, arraylist, hashmap etc
+3. Handling null pointer
+     
+     
+=============================================================================
+
+# AppUtils
+
+
+DNALog.d("App Id"+ DNAAppUtils.getApplicationId());
+
+DNALog.d("App Id"+ DNAAppUtils.getApplicationPackageName());
+
+DNALog.d("Version Code : "+ DNAAppUtils.getAppVersionCode());
+
+DNALog.d("Version Name : "+ DNAAppUtils.getAppVersionName());
+
+DNALog.d("Build Type: "+ DNAAppUtils.getBuildType());
+
+DNALog.d("This is bug build : "+ DNAAppUtils.isBuildType());
+
+
+
+ Benifits:
+1. its provide support in JAVA as well as KOTLIN
+2. It will provide all application information at same place.
+3. Easy to integrate and easy to use
+        
