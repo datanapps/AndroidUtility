@@ -128,6 +128,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/java/DNAFileUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/java/DNALog.java">
           <value>
             <set />
@@ -143,12 +148,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/java/FileUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/kotlin/DNAAppUtils.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/kotlin/DNALog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/AndroidManifest.xml">
           <value>
             <set />
           </value>
@@ -164,6 +179,11 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/main/ugc/UGCActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/util/FileUtils.java">
           <value>
             <set />
           </value>
@@ -199,6 +219,11 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/xml/file_paths.xml">
           <value>
             <set />
           </value>
