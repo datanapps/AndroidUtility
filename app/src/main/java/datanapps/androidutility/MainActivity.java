@@ -4,7 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
+import java.util.ArrayList;
+import java.util.Collections;
 
+import datanapps.androidutility.utils.java.DNAAppUtils;
+import datanapps.androidutility.utils.java.DNACollectionUtils;
 import datanapps.androidutility.utils.kotlin.DNALog;
 import datanapps.androidutility.utils.java.DNASnackBar;
 import datanapps.androidutility.utils.java.DNAToast;
@@ -19,12 +23,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void chekLog(){
+    private void chekLog() {
 
         //DNALog.Companion.d("this is debug message");
 
 
-        DNASnackBar.show( this," this is test message");
+        DNASnackBar.show(this, " this is test message");
         DNAToast.show(this, " this is test message");
+
+
+        DNAAppUtils.getApplicationId();
+
+       /* List<T> mediaList = new ArrayList();
+        if (DNACollectionUtils.isEmpty(mediaList)) {
+            // do your stuff
+        }
+
+        if (DNACollectionUtils.isNotEmpty(mediaList)) {
+// do your stuff
+        }*/
     }
 }
