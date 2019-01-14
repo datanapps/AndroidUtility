@@ -1,4 +1,4 @@
-package datanapps.androidutility.utils;
+package datanapps.androidutility.utils.java;
 
 import java.util.Collection;
 

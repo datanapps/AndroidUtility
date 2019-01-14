@@ -1,4 +1,4 @@
-package datanapps.androidutility.utils;
+package datanapps.androidutility.utils.java;
 
 
 import android.text.TextUtils;
@@ -11,6 +11,7 @@ import datanapps.androidutility.BuildConfig;
 * Yogendra
 * 11/01/2019
 *
+* The purpose of this class to print log
 * */
 public class DNALog {
 
@@ -66,6 +67,7 @@ public class DNALog {
       }
      return msg;
     }
+
 
 
 }

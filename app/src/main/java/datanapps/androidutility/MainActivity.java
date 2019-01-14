@@ -3,9 +3,12 @@ package datanapps.androidutility;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import datanapps.androidutility.utils.DNALog;
-import datanapps.androidutility.utils.DNASnackBar;
-import datanapps.androidutility.utils.DNAToast;
+
+
+import datanapps.androidutility.utils.kotlin.DNALog;
+import datanapps.androidutility.utils.java.DNASnackBar;
+import datanapps.androidutility.utils.java.DNAToast;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void chekLog(){
 
-        DNALog.d("this is debug message");
+        //DNALog.Companion.d("this is debug message");
 
 
         DNASnackBar.show( this," this is test message");

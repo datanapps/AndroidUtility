@@ -1,4 +1,4 @@
-package datanapps.androidutility.utils;
+package datanapps.androidutility.utils.java;
 
 import android.content.Context;
 import android.widget.Toast;
