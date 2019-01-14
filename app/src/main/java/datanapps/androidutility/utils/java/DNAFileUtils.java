@@ -3,7 +3,7 @@ package datanapps.androidutility.utils.java;
 import java.io.File;
 
 public class DNAFileUtils {
-    
+
     public static boolean isFileExist(String filePath) {
         return  filePath!=null && new File(filePath).exists();
     }
