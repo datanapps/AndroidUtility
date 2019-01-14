@@ -9,6 +9,7 @@ This library contain:
 4. CollectionUtils
 5. AppUtils
 6. DateUtils
+7. StringUtils
 
 # How to integrate:
 
