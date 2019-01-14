@@ -13,12 +13,12 @@ import datanapps.androidutility.BuildConfig
 *  The purpose of this class to print log
 *
 * */
-class DNALog {
+object DNALog {
 /*
      * This included because, sonar raise create bug each class should have constructor
      * */
 
-    companion object {
+
 
         private val TAG = "datanapps"
 
@@ -63,6 +63,5 @@ class DNALog {
             return msg ?: "null"
         }
 
-    }
 
 }
