@@ -50,4 +50,27 @@ public class DNAFileUtils {
 
         return null;
     }
+
+
+    public static String getFileSize(String filePath) {
+        int fileSize=0;
+        if(filePath!=null) {
+            File file = new File(filePath);
+            return getFileSize(file);
+        }
+        return fileSize + " KB";
+    }
+
+    public static String getFileSize(File file) {
+        int fileSize=0;
+        if(file!=null  && file.exists()) {
+                fileSize = Integer.parseInt(String.valueOf(file.length() / 1024));
+                if (fileSize >= 1024) {
+                    return (fileSize / 1024) + " MB";
+                } else {
+                    return fileSize + " KB";
+                }
+        }
+        return fileSize + " KB";
+    }
 }

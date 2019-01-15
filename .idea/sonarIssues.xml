@@ -208,7 +208,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/main/ugc/MediaListFragmentDialog.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/main/ugc/MediapickerBottomDialogFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/main/ugc/SelectedMediaListAdapter.java">
           <value>
             <set />
           </value>
@@ -228,6 +238,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/layout/activity_ugc.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/layout/fragment_ugc_media.xml">
           <value>
             <set />
@@ -239,6 +254,16 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/layout/layout_bottom_sheet_media_picker.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/layout/layout_selected_media_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/res/layout/layout_ugc_user.xml">
           <value>
             <set />
           </value>

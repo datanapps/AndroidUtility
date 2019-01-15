@@ -4,6 +4,7 @@ package datanapps.androidutility.utils.kotlin
 import android.text.TextUtils
 import android.text.format.DateFormat
 import android.text.format.DateUtils
+import java.util.*
 
 
 /*
@@ -72,6 +73,7 @@ object DNADateUtils {
     val DATE_FORMAT_dd_MM_yyyy_hh_mm_ss = "dd-MM-yyyy hh:mm:ss" // 31-12-1989 12:30:30
     val DATE_FORMAT_dd_MM_yyyy_hh_mm = "dd-MM-yyyy hh:mm" // 31-12-1989 12:30
     val DATE_FORMAT_dd_MM_yyyy_hh_mm_aa = "dd-MM-yyyy hh:mm aa" // 31-12-1989 12:30 am
+    val DATE_FORMAT_MMM_dd_yyyy_hh_aa = "MMM dd, yyyy hh aa" // Jan 15, 2019 12 pm
 
 
     fun getCurrentDate(format: String): String {
@@ -83,13 +85,21 @@ object DNADateUtils {
         return DateFormat.format(ff, java.util.Date()).toString()
     }
 
-    fun getDateWithTimeStamp(format: String, timeStamp: Long): String {
+    fun formatDate(format: String, timeStamp: Long): String {
         var timeStampVal = timeStamp
         if (timeStamp <= 0) {
             timeStampVal = System.currentTimeMillis()
         }
 
         return DateFormat.format(format, java.util.Date(timeStampVal)).toString()
+    }
+
+    fun formatDate(format: String, date: Date?): String {
+        return DateFormat.format(format, date ?: Date()).toString()
+    }
+
+    fun formatDate(format: String, calendar: Calendar?): String {
+        return DateFormat.format(format, if (calendar == null) Calendar.getInstance().time else calendar.time).toString()
     }
 
 

@@ -5,6 +5,9 @@ import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.text.format.DateUtils;
 
+import java.util.Calendar;
+import java.util.Date;
+
 
 /*
  *
@@ -81,6 +84,10 @@ public class DNADateUtils {
     public static final String DATE_FORMAT_dd_MM_yyyy_hh_mm = "dd-MM-yyyy hh:mm"; // 31-12-1989 12:30
     public static final String DATE_FORMAT_dd_MM_yyyy_hh_mm_aa = "dd-MM-yyyy hh:mm aa"; // 31-12-1989 12:30 am
 
+    public static final String DATE_FORMAT_MMM_dd_yyyy_hh_aa = "MMM dd, yyyy hh aa"; // Jan 15, 2019 12 pm
+
+
+
 
     public static String getCurrentDate(String format) {
 
@@ -90,7 +97,7 @@ public class DNADateUtils {
         return DateFormat.format(format, new java.util.Date()).toString();
     }
 
-    public static String getDateWithTimeStamp(String format, long timeStamp) {
+    public static String formatDate(String format, long timeStamp) {
         if (timeStamp <= 0) {
             timeStamp = System.currentTimeMillis();
         }
@@ -98,6 +105,14 @@ public class DNADateUtils {
         return DateFormat.format(format, new java.util.Date(timeStamp)).toString();
     }
 
+
+    public static String formatDate(String format,Date date) {
+        return DateFormat.format(format, date==null? new Date():date).toString();
+    }
+
+    public static String formatDate(String format,Calendar calendar) {
+        return DateFormat.format(format, calendar==null? Calendar.getInstance().getTime():calendar.getTime()).toString();
+    }
 
     public static String getAgoDateTime(long pastTimeStamp) {
 
