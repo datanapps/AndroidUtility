@@ -36,7 +36,7 @@ DNALog.v("this is debug message");
 
 
 Benifits:
-1. its provide support in JAVA as well as KOTLIN
+1. It provide support in JAVA as well as KOTLIN
 2. This log will work only in debug application.
 3. It will give you more information then simple log.
 
@@ -49,7 +49,7 @@ DNASnackBar.show( this," this is test message");
 
 
 Benifits:
-1. its provide support in JAVA as well as KOTLIN
+1. It provide support in JAVA as well as KOTLIN
 2. A single class have multiple function.
 3. Handling null pointer
 4. if given activity is is null or context then no crash and it will show toast.
@@ -61,7 +61,7 @@ Benifits:
 DNAToast.show(this, " this is test message");
 
 Benifits:
-1. its provide support in JAVA as well as KOTLIN
+1. It provide support in JAVA as well as KOTLIN
 2. A single class have multiple function.
 3. Handling null pointer
 
@@ -79,7 +79,7 @@ Benifits:
         }
         
    Benifits:
-1. its provide support in JAVA as well as KOTLIN
+1. It provide support in JAVA as well as KOTLIN
 2. It will work for all collections like list, arraylist, hashmap etc
 3. Handling null pointer
      
@@ -104,7 +104,7 @@ DNALog.d("This is bug build : "+ DNAAppUtils.isBuildType());
 
 
  Benifits:
-1. its provide support in JAVA as well as KOTLIN
+1. It provide support in JAVA as well as KOTLIN
 2. It will provide all application information at same place.
 3. Easy to integrate and easy to use
         
