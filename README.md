@@ -1,4 +1,4 @@
-# AndroidUtility
+# AndroidUtility (Java) (Kotlin)
 
 
 This library contain:
@@ -13,9 +13,9 @@ This library contain:
 
 # How to integrate:
 
-1. download and extract folder 
+1. Download and extract folder 
 2. Copy utils folder in your folder app->src->main->java->yourpackagename-> <utils>
-3. Now ready to use basics of android
+3. Now ready to use some basics of android applications
 
 =============================================================================
 # How to use in your application:
