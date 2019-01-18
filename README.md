@@ -85,7 +85,7 @@ Benifits:
    Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It will work for all collections like list, arraylist, hashmap etc
-3. Handling null pointer
+3. Handling null pointer in side method
      
      
 =============================================================================
@@ -110,5 +110,5 @@ DNALog.d("This is bug build : "+ DNAAppUtils.isBuildType());
  Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It will provide all application information at same place.
-3. Easy to integrate and easy to use
+3. Easy to integrate and easy to use and provide a support for application
         
