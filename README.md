@@ -23,15 +23,19 @@ This library contain:
 # Logcat
 
 For debug :
+
 DNALog.d("this is debug message");
 
 For error :
+
 DNALog.e("this is debug message");
 
 For info :
+
 DNALog.i("this is debug message");
 
 For verbose :
+
 DNALog.v("this is debug message");
 
 
