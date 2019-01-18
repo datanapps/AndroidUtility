@@ -18,7 +18,7 @@ This library contain:
 3. Now ready to use some basics of android applications
 
 =============================================================================
-# How to use in your application:
+# How to integrate this utility in your application:
 =============================================================================
 # Logcat
 
