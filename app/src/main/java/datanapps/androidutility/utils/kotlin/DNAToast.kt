@@ -18,10 +18,17 @@ class DNAToast {
          * */
     companion object {
 
+
+        var toast: Toast? = null
+
         fun show(context: Context?, msg: String) {
 
             if (context != null) {
-                Toast.makeText(context, validateString(msg), toastTime).show()
+                if (toast != null) {
+                    toast!!.cancel()
+                }
+                toast = Toast.makeText(context, validateString(msg), toastTime)
+                toast!!.show()
             }
         }
 

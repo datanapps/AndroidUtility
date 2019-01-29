@@ -38,6 +38,12 @@ object DNAStringUtils {
     val CRLF = "\\r\\n"
 
 
+    /**
+     * A String for not Applicable
+     *
+     */
+    val NA = "NA"
+
     fun isEmpty(str: String): Boolean {
         return TextUtils.isEmpty(str)
     }

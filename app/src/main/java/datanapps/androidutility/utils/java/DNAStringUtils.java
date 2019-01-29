@@ -39,6 +39,11 @@ public class DNAStringUtils {
     public static final String CRLF = "\\r\\n";
 
 
+    /**
+     * A String for not Applicable
+     *
+     */
+    public static final String NA = "NA";
 
     public static boolean isEmpty(String str) {
         return TextUtils.isEmpty(str);

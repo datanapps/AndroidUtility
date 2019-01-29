@@ -1,8 +1,6 @@
 package datanapps.androidutility.utils.java;
 
-import android.app.Activity;
 import android.content.Context;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.Toast;
 
@@ -22,7 +20,7 @@ public class DNAToast {
     /*
      * This included because, sonar raise create bug each class should have constructor
      * */
-
+private static Toast toast;
     DNAToast() {
         // nothing to do here
     }
@@ -30,7 +28,11 @@ public class DNAToast {
     public static void show(Context context, String msg) {
 
         if (context != null) {
-            Toast.makeText(context, validateString(msg), getToastTime()).show();
+            if (toast!= null) {
+                toast.cancel();
+            }
+            toast= Toast.makeText(context, validateString(msg), getToastTime());
+            toast.show();
         }
     }
 

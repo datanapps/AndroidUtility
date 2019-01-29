@@ -32,7 +32,9 @@ class DNASnackBar {
 
             }
         }
-
+        /*
+        * if you are passing context from some where then it will be show toast because snackbar can show only for activities and view
+        * */
         fun show(activity: Context?, msg: String) {
 
             if (activity != null) {
