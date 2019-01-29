@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.support.design.widget.Snackbar
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 
 
@@ -46,7 +47,7 @@ class DNASnackBar {
             }
         }
 
-
+        // for activity and action
         fun show(activity: Activity?, msg: String, actionText: String, clickListener: View.OnClickListener) {
             if (activity != null) {
                 Snackbar
@@ -56,6 +57,44 @@ class DNASnackBar {
 
         }
 
+
+        // for view and action
+        fun show(view: View?, msg: String, actionText: String, clickListener: View.OnClickListener) {
+            if (view != null) {
+                Snackbar
+                        .make(view, validateString(msg), Snackbar.LENGTH_LONG)
+                        .setAction(actionText, clickListener).show()
+            }
+
+        }
+
+
+        // for styling view and action color action
+        fun show(view: View?, viewBgColor: Int, colorOfMessage: Int, snackBarMsg: String, isCapsMesg: Boolean, messageSize: Int, actionTextColor: Int, actionText: String, clickListener: View.OnClickListener) {
+            if (view != null) {
+                val snackbar = Snackbar.make(view, validateString(snackBarMsg), Snackbar.LENGTH_LONG)
+
+
+                // styling for rest of text
+                val snackbarView : View = snackbar.view
+                val textView : TextView = snackbarView.findViewById(android.support.design.R.id.snackbar_text)
+                textView.setTextColor(colorOfMessage)
+                textView.setAllCaps(isCapsMesg)
+                textView.setTextSize((if (messageSize < 10) 20 else messageSize).toFloat())
+
+
+                // styling for background of snackbar
+
+                snackbarView.setBackgroundColor(viewBgColor)
+
+
+                //styling for action of text
+                snackbar.setActionTextColor(actionTextColor)
+                snackbar.setAction(actionText, clickListener).show()
+
+            }
+
+        }
 
         private fun validateString(msg: String?): String {
             return msg ?: "null"
