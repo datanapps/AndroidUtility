@@ -103,6 +103,20 @@ object DNADateUtils {
     }
 
 
+
+    /*
+    *
+    * It's return date  before one week timestamp
+    *
+    *  like return
+    *
+    *  1 day ago
+    *  2 days ago
+    *  5 days ago
+    *  21 April 2019
+    *
+    *
+    * */
     fun getAgoDateTime(pastTimeStamp: Long): String {
         var pastTS = pastTimeStamp
 
@@ -122,6 +136,43 @@ object DNADateUtils {
 
         return ago.toString()
     }
-}/*
-     * This included because, sonar raise create bug each class should have constructor
-     * */// nothing to do here
+
+
+    /*
+     *
+     * It's return date  before one week timestamp
+     *
+     *  like return
+     *
+     *  1 day ago
+     *  2 days ago
+     *  5 days ago
+     *  2 weeks ago
+     *  2 months ago
+     *  2 years ago
+     *
+     *
+     * */
+
+    fun getTimeAgo(mReferenceTime: Long): String {
+
+        val now = System.currentTimeMillis()
+        val diff = now - mReferenceTime
+        if (diff < android.text.format.DateUtils.WEEK_IN_MILLIS) {
+            return if (diff <= 1000)
+                "just now"
+            else
+                android.text.format.DateUtils.getRelativeTimeSpanString(mReferenceTime, now, DateUtils.MINUTE_IN_MILLIS,
+                        DateUtils.FORMAT_ABBREV_RELATIVE).toString()
+        } else if (diff <= 4 * android.text.format.DateUtils.WEEK_IN_MILLIS) {
+            val week = (diff / android.text.format.DateUtils.WEEK_IN_MILLIS).toInt()
+            return if (week > 1) week.toString() + " weeks Ago" else week.toString() + " week Ago"
+        } else if (diff < android.text.format.DateUtils.YEAR_IN_MILLIS) {
+            val month = (diff / (4 * android.text.format.DateUtils.WEEK_IN_MILLIS)).toInt()
+            return if (month > 1) month.toString() + " months Ago" else month.toString() + " month Ago"
+        } else {
+            val year = (diff / DateUtils.YEAR_IN_MILLIS).toInt()
+            return if (year > 1) year.toString() + " years Ago" else year.toString() + " year Ago"
+        }
+    }
+}

@@ -228,6 +228,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/tracking/MediaDetail.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/dialogs/Dialogs.java">
           <value>
             <set />
@@ -274,6 +279,16 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/main/ugc/UGCActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/ui/main/watch/catchuptv/CatchUpAiredRecentlyAdapterDelegate.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/cna_android_v3/app/src/main/java/com/channelnewsasia/app/util/DateUtils.java">
           <value>
             <set />
           </value>

@@ -2,16 +2,12 @@ package datanapps.androidutility;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.format.DateUtils;
 import android.view.View;
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-import datanapps.androidutility.utils.java.DNAAppUtils;
-import datanapps.androidutility.utils.java.DNACollectionUtils;
-import datanapps.androidutility.utils.kotlin.DNALog;
-import datanapps.androidutility.utils.java.DNASnackBar;
+import datanapps.androidutility.utils.java.DNADateUtils;
+import datanapps.androidutility.utils.java.DNALog;
 import datanapps.androidutility.utils.java.DNAToast;
 
 
@@ -34,22 +30,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkMsg() {
 
-        //DNALog.Companion.d("this is debug message");
 
 
-       // DNASnackBar.show(this, " this is test message");
-        DNAToast.show(this, " this is test message");
+        DNALog.d(" date :  "+ DNADateUtils.getTimeAgo(1517369100000L));
 
 
-        //DNAAppUtils.getApplicationId();
 
-       /* List<T> mediaList = new ArrayList();
-        if (DNACollectionUtils.isEmpty(mediaList)) {
-            // do your stuff
-        }
+        DNALog.d(" 22 jan :  "+ DNADateUtils.getTimeAgo(1548905100000L));
 
-        if (DNACollectionUtils.isNotEmpty(mediaList)) {
-// do your stuff
-        }*/
+
+        //DNAToast.show(this, " this is test message");
+
     }
 }
