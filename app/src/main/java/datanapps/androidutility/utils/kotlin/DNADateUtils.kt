@@ -166,13 +166,13 @@ object DNADateUtils {
                         DateUtils.FORMAT_ABBREV_RELATIVE).toString()
         } else if (diff <= 4 * android.text.format.DateUtils.WEEK_IN_MILLIS) {
             val week = (diff / android.text.format.DateUtils.WEEK_IN_MILLIS).toInt()
-            return if (week > 1) week.toString() + " weeks Ago" else week.toString() + " week Ago"
+            return if (week > 1) week.toString() + " weeks ago" else week.toString() + " week ago"
         } else if (diff < android.text.format.DateUtils.YEAR_IN_MILLIS) {
             val month = (diff / (4 * android.text.format.DateUtils.WEEK_IN_MILLIS)).toInt()
-            return if (month > 1) month.toString() + " months Ago" else month.toString() + " month Ago"
+            return if (month > 1) month.toString() + " months ago" else month.toString() + " month aAgo"
         } else {
             val year = (diff / DateUtils.YEAR_IN_MILLIS).toInt()
-            return if (year > 1) year.toString() + " years Ago" else year.toString() + " year Ago"
+            return if (year > 1) year.toString() + " years ago" else year.toString() + " year ago"
         }
     }
 }

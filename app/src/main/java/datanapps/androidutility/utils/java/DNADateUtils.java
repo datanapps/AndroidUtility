@@ -169,13 +169,13 @@ public class DNADateUtils {
                             DateUtils.FORMAT_ABBREV_RELATIVE).toString();
         } else if (diff <= 4 * android.text.format.DateUtils.WEEK_IN_MILLIS) {
             int week = (int)(diff / (android.text.format.DateUtils.WEEK_IN_MILLIS));
-            return  week>1?week+" weeks Ago":week+" week Ago";
+            return  week>1?week+" weeks ago":week+" week ago";
         } else if (diff < android.text.format.DateUtils.YEAR_IN_MILLIS) {
             int month = (int)(diff / (4 * android.text.format.DateUtils.WEEK_IN_MILLIS));
-            return  month>1?month+" months Ago":month+" month Ago";
+            return  month>1?month+" months ago":month+" month ago";
         } else {
             int year = (int) (diff/DateUtils.YEAR_IN_MILLIS);
-            return year>1?year+" years Ago":year+" year Ago";
+            return year>1?year+" years ago":year+" year ago";
         }
     }
 
