@@ -1,12 +1,16 @@
 package datanapps.androidutility;
 
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.View;
 
 
+import java.io.File;
+
 import datanapps.androidutility.utils.java.DNADateUtils;
+import datanapps.androidutility.utils.java.DNAFileUtils;
 import datanapps.androidutility.utils.java.DNALog;
 import datanapps.androidutility.utils.java.DNASharedPreferenceUtils;
 import datanapps.androidutility.utils.java.DNAToast;
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // for save value
-        DNASharedPreferenceUtils.saveString("key", "this is my value");
+       int size = DNAFileUtils.getFileSize(file);
 
         //get value
         DNALog.d(" date :  "+ DNASharedPreferenceUtils.getString("key"));

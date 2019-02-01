@@ -41,7 +41,7 @@ public class DNAFileUtils {
     /*
      * Create JPG image file
      * */
-    public static File createImageFile(File dir, String suffix) {
+    public static File createFile(File dir, String suffix) {
         try {
             File image = File.createTempFile(
                     "IMG_" + System.currentTimeMillis(),  /* prefix */

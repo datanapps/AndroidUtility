@@ -10,6 +10,9 @@ object DNAFileUtils {
 
     // suffix png
     val PNG = ".png"
+
+
+
     fun isFileExist(filePath: String?): Boolean {
         return filePath != null && File(filePath).exists()
     }
@@ -40,7 +43,7 @@ object DNAFileUtils {
     /*
     * Create file with suffix
     * */
-    fun createJPGImageFile(dir: File?, suffix:String?): File? {
+    fun createFile(dir: File?, suffix:String?): File? {
         try {
             return File.createTempFile(
                     "IMG_" + System.currentTimeMillis(), /* prefix */
