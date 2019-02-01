@@ -119,7 +119,7 @@ DNALog.d("This is bug build : "+ DNAAppUtils.isBuildType());
         
 =============================================================================
 
-# 6.StringUtils
+# 6. StringUtils
 
 String stringList;
  
@@ -184,3 +184,34 @@ To use in Application:
 2. It provide all method to save like STRING, FLOAT, INTEGER, LONG, BOOLEAN.
 3. Easy to integrate and easy to use and provide.
 4. All above repo class is tested.
+
+
+=============================================================================
+
+# 8. FileUtils
+
+
+This file can use to 
+
+1. Create File
+
+File file = DNAFileUtils.createFile(Environment.getDataDirectory(), DNAFileUtils.PNG);
+
+2. To Check existence of file:
+
+boolean isExist = DNAFileUtils.isFileExist(file);
+
+3.To GetFileSize :
+
+int size = DNAFileUtils.getFileSize(file);
+
+Benifits:
+1. It provide support in JAVA as well as KOTLIN
+2. It provide all method related file : CREATE, FILE SIZE, EXISTIENCE OF FILE, 
+3. Easy to integrate and easy to use and provide.
+
+
+
+
+
+
