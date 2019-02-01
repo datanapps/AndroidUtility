@@ -4,27 +4,33 @@ import java.io.File;
 
 public class DNAFileUtils {
 
+    // suffix jpg
+    public static final String JPG = ".jpg";
+
+    // suffix png
+    public static final String PNG = ".png";
+
     public static boolean isFileExist(String filePath) {
-        return  filePath!=null && new File(filePath).exists();
+        return filePath != null && new File(filePath).exists();
     }
 
     public static boolean isFileExist(File file) {
-        return file!=null && file.exists();
+        return file != null && file.exists();
     }
 
 
     /*
      * Create JPG image file
      * */
-    public static  File createJPGImageFile(File dir) {
+    public static File createJPGImageFile(File dir) {
         try {
-             File image = File.createTempFile(
-                     "IMG_" + System.currentTimeMillis(),  /* prefix */
+            File image = File.createTempFile(
+                    "IMG_" + System.currentTimeMillis(),  /* prefix */
                     ".jpg",         /* suffix */
                     dir     /* directory */
             );
             return image;
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -33,10 +39,29 @@ public class DNAFileUtils {
 
 
     /*
-    * Create mp4 file
-    * */
+     * Create JPG image file
+     * */
+    public static File createImageFile(File dir, String suffix) {
+        try {
+            File image = File.createTempFile(
+                    "IMG_" + System.currentTimeMillis(),  /* prefix */
+                    suffix,         /* suffix */
+                    dir     /* directory */
+            );
+            return image;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-    public static  File createMp4File(File dir) {
+        return null;
+    }
+
+
+    /*
+     * Create mp4 file
+     * */
+
+    public static File createMp4File(File dir) {
         try {
             File image = File.createTempFile(
                     "IMG_" + System.currentTimeMillis(),  /* prefix */
@@ -44,7 +69,7 @@ public class DNAFileUtils {
                     dir     /* directory */
             );
             return image;
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -53,8 +78,8 @@ public class DNAFileUtils {
 
 
     public static String getFileSize(String filePath) {
-        int fileSize=0;
-        if(filePath!=null) {
+        int fileSize = 0;
+        if (filePath != null) {
             File file = new File(filePath);
             return getFileSize(file);
         }
@@ -62,14 +87,14 @@ public class DNAFileUtils {
     }
 
     public static String getFileSize(File file) {
-        int fileSize=0;
-        if(file!=null  && file.exists()) {
-                fileSize = Integer.parseInt(String.valueOf(file.length() / 1024));
-                if (fileSize >= 1024) {
-                    return (fileSize / 1024) + " MB";
-                } else {
-                    return fileSize + " KB";
-                }
+        int fileSize = 0;
+        if (file != null && file.exists()) {
+            fileSize = Integer.parseInt(String.valueOf(file.length() / 1024));
+            if (fileSize >= 1024) {
+                return (fileSize / 1024) + " MB";
+            } else {
+                return fileSize + " KB";
+            }
         }
         return fileSize + " KB";
     }

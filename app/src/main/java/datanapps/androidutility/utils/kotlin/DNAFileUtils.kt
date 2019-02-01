@@ -4,6 +4,12 @@ import java.io.File
 
 object DNAFileUtils {
 
+
+    // suffix jpg
+    val JPG = ".jpg"
+
+    // suffix png
+    val PNG = ".png"
     fun isFileExist(filePath: String?): Boolean {
         return filePath != null && File(filePath).exists()
     }
@@ -21,6 +27,24 @@ object DNAFileUtils {
             return File.createTempFile(
                     "IMG_" + System.currentTimeMillis(), /* prefix */
                     ".jpg", /* suffix */
+                    dir     /* directory */
+            )
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+        return null
+    }
+
+
+    /*
+    * Create file with suffix
+    * */
+    fun createJPGImageFile(dir: File?, suffix:String?): File? {
+        try {
+            return File.createTempFile(
+                    "IMG_" + System.currentTimeMillis(), /* prefix */
+                    suffix, /* suffix */
                     dir     /* directory */
             )
         } catch (e: Exception) {
