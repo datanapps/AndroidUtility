@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // for save value
-       int size = DNAFileUtils.getFileSize(file);
+       //int size = DNAFileUtils.getFileSize(file);
 
         //get value
         DNALog.d(" date :  "+ DNASharedPreferenceUtils.getString("key"));
