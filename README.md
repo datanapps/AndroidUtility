@@ -76,6 +76,8 @@ Benifits:
 # 4. CollectionUtils
 
  List<T> mediaList = new ArrayList();
+ 
+ 
         if (DNACollectionUtils.isEmpty(mediaList)) {
             // do your stuff 
         }
@@ -117,9 +119,28 @@ DNALog.d("This is bug build : "+ DNAAppUtils.isBuildType());
         
 =============================================================================
 
+# 6.StringUtils
 
+String stringList;
+ 
+ 
+        if (DNAStringUtils.isEmpty(stringList)) {
+            // do your stuff 
+        }
 
-# 5. SharedPreference
+        if (DNAStringUtils.isNotEmpty(stringList)) {
+            // do your stuff 
+        }
+        
+   Benifits:
+1. It provide support in JAVA as well as KOTLIN
+2. It provide SOME value like EMPTY, NEW LINE, SPACE. NA etc.
+3. its checking for NULL and empty both
+     
+
+=============================================================================
+
+# 7. SharedPreference
 
 In Application file just initialise Preference at once in OnCreate .
 
