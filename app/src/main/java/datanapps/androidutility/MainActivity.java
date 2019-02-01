@@ -8,6 +8,7 @@ import android.view.View;
 
 import datanapps.androidutility.utils.java.DNADateUtils;
 import datanapps.androidutility.utils.java.DNALog;
+import datanapps.androidutility.utils.java.DNASharedPreferenceUtils;
 import datanapps.androidutility.utils.java.DNAToast;
 
 
@@ -31,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
     private void checkMsg() {
 
 
+        // for save value
+        DNASharedPreferenceUtils.saveString("key", "this is my value");
 
-        DNALog.d(" date :  "+ DNADateUtils.getTimeAgo(1517369100000L));
+        //get value
+        DNALog.d(" date :  "+ DNASharedPreferenceUtils.getString("key"));
 
 
 
