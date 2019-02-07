@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkMsg() {
 
-
         // for save value
        //int size = DNAFileUtils.getFileSize(file);
 
