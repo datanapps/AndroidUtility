@@ -12,6 +12,7 @@ This library contain:
 7. StringUtils
 8. FileUtils
 9. Shared Preference
+10. ExceptionHandler 
 
 # How to integrate:
 
@@ -211,7 +212,26 @@ Benifits:
 3. Easy to integrate and easy to use and provide.
 
 
+=============================================================================
 
+# 8. ExceptionHandler
+Easy to handle exception with one line and manually added crash in Crashlytics
 
+JAVA/KOTLIN : 
 
+     private void login() {
 
+        try {
+           // do your login stuff
+        } catch (Exception e) {
+            DNAExceptionHandler.handleException(e);
+            // handle your exception here!
+        }
+    }
+    
+    Benifits:
+1. It provide support in JAVA as well as KOTLIN
+2. It provide to catch all try catch flow in application and manually you can send all exception to your tracker like crashlytics. 
+3. Easy to integrate and easy to use and provide.
+    
+    
