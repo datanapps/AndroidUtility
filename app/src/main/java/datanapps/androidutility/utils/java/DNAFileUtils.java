@@ -1,5 +1,7 @@
 package datanapps.androidutility.utils.java;
 
+import android.webkit.MimeTypeMap;
+
 import java.io.File;
 
 public class DNAFileUtils {
@@ -98,4 +100,16 @@ public class DNAFileUtils {
         }
         return fileSize + " KB";
     }
+
+
+    //  // get file mime type
+    public static String getMimeType(String filePath) {
+        String type = null;
+        String extension = MimeTypeMap.getFileExtensionFromUrl(filePath);
+        if (extension != null) {
+            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
+        }
+        return type;
+    }
+
 }

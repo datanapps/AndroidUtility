@@ -1,5 +1,6 @@
 package datanapps.androidutility.utils.kotlin
 
+import android.webkit.MimeTypeMap
 import java.io.File
 
 object DNAFileUtils {
@@ -74,5 +75,16 @@ object DNAFileUtils {
         }
 
         return null
+    }
+
+
+    // get file mime type
+    fun getMimeType(filePath: String): String? {
+        var type: String? = null
+        val extension = MimeTypeMap.getFileExtensionFromUrl(filePath)
+        if (extension != null) {
+            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension)
+        }
+        return type
     }
 }
