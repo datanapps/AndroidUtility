@@ -241,7 +241,7 @@ JAVA/KOTLIN :
 
 # 9. Device Detail
 
-####JAVA/KOTLIN : 
+#### JAVA/KOTLIN : 
 
         Log.i("DNA", "SERIAL: " + DNADeviceUtils.getSerial());
         Log.i("DNA","MODEL: " + DNADeviceUtils.getModel());
@@ -259,7 +259,7 @@ JAVA/KOTLIN :
         Log.i("DNA","Version Code: " + DNADeviceUtils.getVersionRelease());
     
     
-    ## Output:
+   #### Output:
     
     
      SERIAL: WCR7N18613005916
@@ -276,10 +276,6 @@ JAVA/KOTLIN :
      HOST szvphicpra02075
      FINGERPRINT: HUAWEI/CLT-L29/HWCLT:8.1.0/HUAWEICLT-L29/155(C636):user/release-keys
      Version Code: 8.1.0
-    
-Benifits:
-1. It provide support in JAVA as well as KOTLIN
-2. It provide to catch all try catch flow in application and manually you can send all exception to your tracker like crashlytics. 
-3. Easy to integrate and easy to use and provide.
+  
     
     
