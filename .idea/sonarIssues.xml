@@ -218,6 +218,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/kotlin/DNADeviceUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/kotlin/DNAExceptionHandler.java">
           <value>
             <set />
