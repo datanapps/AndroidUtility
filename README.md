@@ -1,9 +1,9 @@
 # AndroidUtility (Java) (Kotlin)
 
 
-This library contain:
+/**This library contain:*//
 
-1. Logcat
+/**1. Logcat
 2. Snackbar
 3. Toast
 4. CollectionUtils
@@ -13,7 +13,7 @@ This library contain:
 8. FileUtils
 9. Shared Preference
 10. ExceptionHandler 
-11. Device Detail 
+11. Device Detail **/
 
 
 # How to integrate:
@@ -69,7 +69,7 @@ DNASnackBar.show( this," this is test message");
 // call method
 DNAToast.show(this, " this is test message");
 
-Benifits:
+#### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. A single class have multiple function.
 3. Handling null pointer
