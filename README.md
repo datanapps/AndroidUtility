@@ -44,7 +44,7 @@ For verbose :
 DNALog.v("this is debug message");
 
 
-Benifits:
+#### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. This log will work only in debug application.
 3. It will give you more information then simple log.
@@ -57,7 +57,7 @@ Benifits:
 DNASnackBar.show( this," this is test message");
 
 
-Benifits:
+#### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. A single class have multiple function.
 3. Handling null pointer
@@ -89,7 +89,7 @@ Benifits:
             // do your stuff 
         }
         
-   Benifits:
+   #### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It will work for all collections like list, arraylist, hashmap etc
 3. Handling null pointer in side method
@@ -115,7 +115,7 @@ DNALog.d("This is bug build : "+ DNAAppUtils.isBuildType());
 
 
 
- Benifits:
+ #### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It will provide all application information at same place.
 3. Easy to integrate and easy to use and provide a support for application
@@ -135,7 +135,7 @@ String stringList;
             // do your stuff 
         }
         
-   Benifits:
+   #### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It provide SOME value like EMPTY, NEW LINE, SPACE. NA etc.
 3. its checking for NULL and empty both
@@ -182,7 +182,7 @@ To use in Application:
         //get value
         DNALog.d(" value :  "+ DNASharedPreferenceUtils.getString("key"));
 
- Benifits:
+ #### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It provide all method to save like STRING, FLOAT, INTEGER, LONG, BOOLEAN.
 3. Easy to integrate and easy to use and provide.
@@ -208,7 +208,7 @@ boolean isExist = DNAFileUtils.isFileExist(file);
 
 int size = DNAFileUtils.getFileSize(file);
 
-Benifits:
+#### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It provide all method related file : CREATE, FILE SIZE, EXISTIENCE OF FILE, 
 3. Easy to integrate and easy to use and provide.
@@ -231,7 +231,7 @@ JAVA/KOTLIN :
         }
     }
     
-    Benifits:
+   #### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It provide to catch all try catch flow in application and manually you can send all exception to your tracker like crashlytics. 
 3. Easy to integrate and easy to use and provide.
