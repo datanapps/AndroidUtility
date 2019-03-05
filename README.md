@@ -1,19 +1,29 @@
 # AndroidUtility (Java) (Kotlin)
 
 
-** This library contain: **
+**This library contain: **
 
 **1. Logcat**
+
 **2. Snackbar**
+
 **3. Toast**
+
 **4. CollectionUtils**
+
 **5. AppUtils**
+
 **6. DateUtils**
+
 **7. StringUtils**
+
 **8. FileUtils**
+
 **9. Shared Preference**
+
 **10. ExceptionHandler**
-**11. Device Detail **
+
+**11. Device Detail**
 
 
 # How to integrate:
