@@ -13,6 +13,8 @@ This library contain:
 8. FileUtils
 9. Shared Preference
 10. ExceptionHandler 
+11. Device Detail 
+
 
 # How to integrate:
 
@@ -214,7 +216,7 @@ Benifits:
 
 =============================================================================
 
-# 8. ExceptionHandler
+# 9. ExceptionHandler
 Easy to handle exception with one line and manually added crash in Crashlytics
 
 JAVA/KOTLIN : 
@@ -230,6 +232,52 @@ JAVA/KOTLIN :
     }
     
     Benifits:
+1. It provide support in JAVA as well as KOTLIN
+2. It provide to catch all try catch flow in application and manually you can send all exception to your tracker like crashlytics. 
+3. Easy to integrate and easy to use and provide.
+
+
+=============================================================================
+
+# 9. Device Detail
+
+####JAVA/KOTLIN : 
+
+        Log.i("DNA", "SERIAL: " + DNADeviceUtils.getSerial());
+        Log.i("DNA","MODEL: " + DNADeviceUtils.getModel());
+        Log.i("DNA","ID: " + DNADeviceUtils.getDeviceId());
+        Log.i("DNA","Manufacture: " + DNADeviceUtils.getManufacturer());
+        Log.i("DNA","brand: " + DNADeviceUtils.getBrand());
+        Log.i("DNA","type: " + DNADeviceUtils.getType());
+        Log.i("DNA","user: " + DNADeviceUtils.getUser());
+        Log.i("DNA","BASE: " + DNADeviceUtils.getBaseVersionCode());
+        Log.i("DNA","INCREMENTAL " + DNADeviceUtils.getVersionIncremental());
+        Log.i("DNA","SDK  " + DNADeviceUtils.getSDKVersion());
+        Log.i("DNA","BOARD: " + DNADeviceUtils.getBoard());
+        Log.i("DNA","HOST " + DNADeviceUtils.getDeviceHost());
+        Log.i("DNA","FINGERPRINT: "+DNADeviceUtils.getDeviceFingerprint());
+        Log.i("DNA","Version Code: " + DNADeviceUtils.getVersionRelease());
+    
+    
+    ## Output:
+    
+    
+     SERIAL: WCR7N18613005916
+     MODEL: CLT-L29
+     ID: HUAWEICLT-L29
+     Manufacture: HUAWEI
+     brand: HUAWEI
+     type: user
+     user: test
+     BASE: 1
+     INCREMENTAL 155(C636)
+     SDK  27
+     BOARD: CLT
+     HOST szvphicpra02075
+     FINGERPRINT: HUAWEI/CLT-L29/HWCLT:8.1.0/HUAWEICLT-L29/155(C636):user/release-keys
+     Version Code: 8.1.0
+    
+Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It provide to catch all try catch flow in application and manually you can send all exception to your tracker like crashlytics. 
 3. Easy to integrate and easy to use and provide.
