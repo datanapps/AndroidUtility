@@ -1,15 +1,18 @@
 package datanapps.androidutility;
 
+import android.os.Build;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.DateUtils;
+import android.util.Log;
 import android.view.View;
 
 
 import java.io.File;
 
 import datanapps.androidutility.utils.java.DNADateUtils;
+import datanapps.androidutility.utils.java.DNADeviceUtils;
 import datanapps.androidutility.utils.java.DNAFileUtils;
 import datanapps.androidutility.utils.java.DNALog;
 import datanapps.androidutility.utils.java.DNASharedPreferenceUtils;
@@ -35,18 +38,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkMsg() {
 
-        // for save value
-       //int size = DNAFileUtils.getFileSize(file);
-
-        //get value
-        DNALog.d(" date :  "+ DNASharedPreferenceUtils.getString("key"));
-
-
-
-        DNALog.d(" 22 jan :  "+ DNADateUtils.getTimeAgo(1548905100000L));
-
-
-        //DNAToast.show(this, " this is test message");
+        Log.i("DNA", "SERIAL: " + DNADeviceUtils.getSerial());
+        Log.i("DNA","MODEL: " + DNADeviceUtils.getModel());
+        Log.i("DNA","ID: " + DNADeviceUtils.getDeviceId());
+        Log.i("DNA","Manufacture: " + DNADeviceUtils.getManufacturer());
+        Log.i("DNA","brand: " + DNADeviceUtils.getBrand());
+        Log.i("DNA","type: " + DNADeviceUtils.getType());
+        Log.i("DNA","user: " + DNADeviceUtils.getUser());
+        Log.i("DNA","BASE: " + DNADeviceUtils.getBaseVersionCode());
+        Log.i("DNA","INCREMENTAL " + DNADeviceUtils.getVersionIncremental());
+        Log.i("DNA","SDK  " + DNADeviceUtils.getSDKVersion());
+        Log.i("DNA","BOARD: " + DNADeviceUtils.getBoard());
+        Log.i("DNA","HOST " + DNADeviceUtils.getDeviceHost());
+        Log.i("DNA","FINGERPRINT: "+DNADeviceUtils.getDeviceFingerprint());
+        Log.i("DNA","Version Code: " + DNADeviceUtils.getVersionRelease());
 
     }
 }
