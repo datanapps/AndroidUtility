@@ -73,14 +73,14 @@ class DNASnackBar {
         fun show(view: View?, viewBgColor: Int, colorOfMessage: Int, snackBarMsg: String, isCapsMesg: Boolean, messageSize: Int, actionTextColor: Int, actionText: String, clickListener: View.OnClickListener) {
             if (view != null) {
                 val snackbar = Snackbar.make(view, validateString(snackBarMsg), Snackbar.LENGTH_LONG)
-
+                val snackbarView : View = snackbar.view
 
                 // styling for rest of text
-                val snackbarView : View = snackbar.view
-                val textView : TextView = snackbarView.findViewById(android.support.design.R.id.snackbar_text)
+             
+               /* val textView : TextView = snackbarView.findViewById(android.support.design.R.id.snackbar_text)
                 textView.setTextColor(colorOfMessage)
                 textView.setAllCaps(isCapsMesg)
-                textView.setTextSize((if (messageSize < 10) 20 else messageSize).toFloat())
+                textView.setTextSize((if (messageSize < 10) 20 else messageSize).toFloat())*/
 
 
                 // styling for background of snackbar

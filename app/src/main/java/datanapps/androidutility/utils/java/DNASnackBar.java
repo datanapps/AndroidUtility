@@ -2,7 +2,6 @@ package datanapps.androidutility.utils.java;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.TextView;
@@ -85,15 +84,15 @@ public class DNASnackBar {
     public static void show(View view, int viewBgColor, int colorOfMessage, String snackBarMsg, boolean isCapsMesg, int messageSize, int actionTextColor, String actionText, View.OnClickListener clickListener) {
         if (view != null) {
             Snackbar snackbar = Snackbar.make(view, validateString(snackBarMsg), Snackbar.LENGTH_LONG);
-
-
-
-            // styling for rest of text
             View snackbarView = snackbar.getView();
+
+
+          /*  // styling for rest of text
+
             TextView textView = snackbarView.findViewById(android.support.design.R.id.snackbar_text);
             textView.setTextColor(colorOfMessage);
             textView.setAllCaps(isCapsMesg);
-            textView.setTextSize(messageSize<10?20:messageSize);
+            textView.setTextSize(messageSize<10?20:messageSize);*/
 
 
 
