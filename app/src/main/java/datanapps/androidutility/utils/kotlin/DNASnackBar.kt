@@ -76,7 +76,7 @@ class DNASnackBar {
                 val snackbarView : View = snackbar.view
 
                 // styling for rest of text
-             
+
                /* val textView : TextView = snackbarView.findViewById(android.support.design.R.id.snackbar_text)
                 textView.setTextColor(colorOfMessage)
                 textView.setAllCaps(isCapsMesg)
