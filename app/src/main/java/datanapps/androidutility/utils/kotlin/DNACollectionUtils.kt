@@ -17,5 +17,16 @@ object DNACollectionUtils {
         return collection == null || collection.isEmpty()
     }
 
+    fun isNull(collection: Collection<*>?): Boolean {
+        return collection == null
+    }
+
+
+    fun size(collection: Collection<*>?): Int {
+        if (collection == null)
+            return 0
+        return if (collection.isEmpty()) 0 else collection.size
+
+    }
 
 }

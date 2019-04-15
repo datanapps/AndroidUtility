@@ -28,5 +28,17 @@ public final class DNACollectionUtils {
     }
 
 
+    public static boolean isNull(Collection<?> collection) {
+        return collection == null;
+    }
+
+
+    public static int size(Collection<?> collection) {
+        if (collection == null)
+            return 0;
+
+        return collection.isEmpty()?0:collection.size();
+    }
+
 
 }

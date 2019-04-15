@@ -52,4 +52,16 @@ object DNAStringUtils {
         return !TextUtils.isEmpty(str)
     }
 
+
+    fun isNull(str: String?): Boolean {
+        return str == null
+    }
+
+
+    fun length(str: String?): Int {
+        if (str == null)
+            return 0
+        return if (str.isEmpty()) 0 else str.length
+
+    }
 }
