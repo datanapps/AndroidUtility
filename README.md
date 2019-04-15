@@ -99,6 +99,14 @@ DNAToast.show(this, " this is test message");
             // do your stuff 
         }
         
+        if (DNACollectionUtils.isNull(mediaList)) {
+            // do your stuff 
+        }
+        
+        if (DNACollectionUtils.size(mediaList)) {
+            // do your stuff 
+        }
+        
    #### Benifits:
 1. It provide support in JAVA as well as KOTLIN
 2. It will work for all collections like list, arraylist, hashmap etc
@@ -142,6 +150,14 @@ String stringList;
         }
 
         if (DNAStringUtils.isNotEmpty(stringList)) {
+            // do your stuff 
+        }
+        
+        if (DNAStringUtils.isNull(stringList)) {
+            // do your stuff 
+        }
+        
+        if (DNAStringUtils.length(stringList)) {
             // do your stuff 
         }
         
