@@ -359,7 +359,7 @@ JAVA/KOTLIN :
        };
      }
 
-     ###Output :
+   #### Output:
 
      Charging Type  USB:true
       Charging Type  AC:false
