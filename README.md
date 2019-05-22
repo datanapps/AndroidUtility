@@ -25,6 +25,8 @@
 
 **11. Device Detail**
 
+**12. Internet Connection Details **
+
 
 # How to integrate:
 
@@ -303,5 +305,10 @@ JAVA/KOTLIN :
      FINGERPRINT: HUAWEI/CLT-L29/HWCLT:8.1.0/HUAWEICLT-L29/155(C636):user/release-keys
      Version Code: 8.1.0
   
+    =============================================================================
+
+# 10. Internet Details
     
+    #### JAVA/KOTLIN : 
     
+     Log.i("DNA", "connected with internet : " + DNANetworkUtils.isInternetConnected(this));
