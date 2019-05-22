@@ -163,6 +163,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/java/DNANetworkUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/java/DNASharedPref.java">
           <value>
             <set />
@@ -239,6 +244,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/kotlin/DNALog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/kotlin/DNANetworkUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/datanapps/androidutility/utils/kotlin/DNANetworkUtils.kt">
           <value>
             <set />
           </value>
