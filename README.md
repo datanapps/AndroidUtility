@@ -25,7 +25,7 @@
 
 **11. Device Detail**
 
-**12. Internet Connection Details **
+**12. Internet Connection Details**
 
 
 # How to integrate:
