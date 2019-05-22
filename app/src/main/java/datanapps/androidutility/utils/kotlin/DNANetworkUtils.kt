@@ -18,7 +18,7 @@ object DNANetworkUtils {
      * This included because, sonar raise create bug each class should have constructor
      * */
 
-    
+
 
         /*
      * This will check internet connection in android

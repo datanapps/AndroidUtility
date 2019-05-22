@@ -1,22 +1,11 @@
 package datanapps.androidutility;
 
-import android.os.Build;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.format.DateUtils;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-
-import java.io.File;
-
-import datanapps.androidutility.utils.java.DNADateUtils;
 import datanapps.androidutility.utils.java.DNADeviceUtils;
-import datanapps.androidutility.utils.java.DNAFileUtils;
-import datanapps.androidutility.utils.java.DNALog;
-import datanapps.androidutility.utils.java.DNASharedPreferenceUtils;
-import datanapps.androidutility.utils.java.DNAToast;
 
 
 public class MainActivity extends AppCompatActivity {
