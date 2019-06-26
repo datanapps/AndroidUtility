@@ -77,4 +77,17 @@ object DNANetworkUtils {
         }
 
 
+    /**
+     * Returns true, if given [NetworkInfo] is available, online and not in roaming mode
+     *
+     * @param context Context
+     * @return true or false
+     */
+    fun isNoRoaming(context: Context): Boolean {
+        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val networkInfo = cm.activeNetworkInfo
+        return networkInfo != null && !networkInfo.isRoaming
+    }
+
+
 }

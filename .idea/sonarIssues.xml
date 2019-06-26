@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -294,6 +299,46 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../MultipleMediaPicker/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/MyApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/data/content/cms/SpecialReportRepositoryImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/data/content/cms/source/remote/Channel8Service.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/data/user/SsoWebService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/di/ServiceModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/util/NetworkUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/MCP/Gr8Android/app/src/main/java/com/mediacorp/sg/channel8news/util/SharedPreferenceUtils.kt">
           <value>
             <set />
           </value>

@@ -88,4 +88,19 @@ public class DNANetworkUtils {
         return activeNetwork != null && (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE);
     }
 
+
+    /**
+     * Returns true, if given {@link NetworkInfo} is available, online and not in roaming mode
+     *
+     * @param context Context
+     * @return true or false
+     */
+    public static boolean isNoRoaming(Context context) {
+        ConnectivityManager cm =
+                (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+        return networkInfo != null && !networkInfo.isRoaming();
+    }
+
 }
