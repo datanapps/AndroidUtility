@@ -33,4 +33,25 @@ object DNACollectionUtils {
 
     }
 
+
+    /*
+     * =================== LIST ==========================
+     * */
+    fun emptyList(): List<*>? {
+        return emptyList()
+    }
+
+    /*
+     * =================== SET ==========================
+     * */
+    fun emptySet(): Set<*>? {
+        return emptySet()
+    }
+
+    /*
+     * =================== MAP ==========================
+     * */
+    fun emptyMap(): Map<*, *>? {
+        return emptyMap()
+    }
 }
