@@ -375,4 +375,11 @@ JAVA/KOTLIN :
       Battery Voltage: 4186
       Battery Temperature: 25.8
 
+
+   ####<a href="https://www.paypal.me/datanappspaynow" target="_blank">BUY ME A BEER</a>
+ 
+ 
+ 
+ 
+
      
