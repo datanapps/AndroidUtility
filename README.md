@@ -379,7 +379,6 @@ JAVA/KOTLIN :
    <a href="https://www.paypal.me/datanappspaynow" target="_blank">BUY ME A BEER</a>
  
  
- ![https://www.paypal.me/datanappspaynow](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png)
- 
+ [![See](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png)](https://www.paypal.me/datanappspaynow)
 
      
