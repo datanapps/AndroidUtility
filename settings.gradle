@@ -1,1 +1,2 @@
+rootProject.name='AndroidUtility'
 include ':app'

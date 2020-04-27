@@ -4,8 +4,6 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import datanapps.androidutility.BuildConfig;
-
 
 
 /*
@@ -33,7 +31,7 @@ public class DNANetworkUtils {
      *  Make sure you have mention below permission in manifest
      *
      *  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
      *
      *
      * */

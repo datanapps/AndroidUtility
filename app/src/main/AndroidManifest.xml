@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="datanapps.androidutility">
 
-
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -17,7 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
 
         <activity android:name=".BatteryActivity">
             <intent-filter>

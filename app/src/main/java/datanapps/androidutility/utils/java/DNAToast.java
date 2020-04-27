@@ -1,7 +1,6 @@
 package datanapps.androidutility.utils.java;
 
 import android.content.Context;
-import android.view.View;
 import android.widget.Toast;
 
 

@@ -1,9 +1,10 @@
 package datanapps.androidutility;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import datanapps.androidutility.utils.java.DNADeviceUtils;
 

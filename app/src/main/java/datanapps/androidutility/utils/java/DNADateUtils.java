@@ -91,7 +91,7 @@ public class DNADateUtils {
         if (TextUtils.isEmpty(format)) {
             format = DATE_FORMAT_dd_MM_yyyy_hh_mm;
         }
-        return DateFormat.format(format, new java.util.Date()).toString();
+        return DateFormat.format(format, new Date()).toString();
     }
 
     public static String formatDate(String format, long timeStamp) {
@@ -99,7 +99,7 @@ public class DNADateUtils {
             timeStamp = System.currentTimeMillis();
         }
 
-        return DateFormat.format(format, new java.util.Date(timeStamp)).toString();
+        return DateFormat.format(format, new Date(timeStamp)).toString();
     }
 
 
@@ -162,16 +162,16 @@ public class DNADateUtils {
 
         long now = System.currentTimeMillis();
         final long diff = now - mReferenceTime;
-        if (diff < android.text.format.DateUtils.WEEK_IN_MILLIS) {
+        if (diff < DateUtils.WEEK_IN_MILLIS) {
             return (diff <= 1000) ?
                     "just now" :
-                    android.text.format.DateUtils.getRelativeTimeSpanString(mReferenceTime, now, DateUtils.MINUTE_IN_MILLIS,
+                    DateUtils.getRelativeTimeSpanString(mReferenceTime, now, DateUtils.MINUTE_IN_MILLIS,
                             DateUtils.FORMAT_ABBREV_RELATIVE).toString();
-        } else if (diff <= 4 * android.text.format.DateUtils.WEEK_IN_MILLIS) {
-            int week = (int)(diff / (android.text.format.DateUtils.WEEK_IN_MILLIS));
+        } else if (diff <= 4 * DateUtils.WEEK_IN_MILLIS) {
+            int week = (int)(diff / (DateUtils.WEEK_IN_MILLIS));
             return  week>1?week+" weeks ago":week+" week ago";
-        } else if (diff < android.text.format.DateUtils.YEAR_IN_MILLIS) {
-            int month = (int)(diff / (4 * android.text.format.DateUtils.WEEK_IN_MILLIS));
+        } else if (diff < DateUtils.YEAR_IN_MILLIS) {
+            int month = (int)(diff / (4 * DateUtils.WEEK_IN_MILLIS));
             return  month>1?month+" months ago":month+" month ago";
         } else {
             int year = (int) (diff/DateUtils.YEAR_IN_MILLIS);

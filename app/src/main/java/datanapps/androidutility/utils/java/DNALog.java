@@ -1,8 +1,6 @@
 package datanapps.androidutility.utils.java;
 
 
-import android.text.TextUtils;
-
 import datanapps.androidutility.BuildConfig;
 
 
@@ -57,6 +55,16 @@ public class DNALog {
     public static void v(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.v(TAG,  validateString(msg));
+        }
+    }
+
+
+    /*
+     * WARNING
+     * */
+    public static void w(String msg) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.w(TAG,  validateString(msg));
         }
     }
 
