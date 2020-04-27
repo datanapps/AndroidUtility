@@ -71,7 +71,7 @@ public class DNAAppUtils {
      *
      * Application build type
      * */
-    public static boolean isBuildType() {
+    public static boolean isDebug() {
         return BuildConfig.DEBUG;
     }
 

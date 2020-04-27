@@ -9,6 +9,10 @@ package datanapps.androidutility.utils.kotlin
  * */
 object DNACollectionUtils {
 
+    /*
+   * =================== COMMON ==========================
+   * */
+
     fun isNotEmpty(collection: Collection<*>): Boolean {
         return !isEmpty(collection)
     }

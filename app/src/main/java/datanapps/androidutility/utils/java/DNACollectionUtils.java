@@ -1,7 +1,10 @@
 package datanapps.androidutility.utils.java;
 
 import java.util.Collection;
-
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 
 /*
@@ -19,6 +22,9 @@ public final class DNACollectionUtils {
         // nothing to do here
     }
 
+    /*
+    * =================== COMMON ==========================
+    * */
     public static boolean isNotEmpty(Collection<?> collection) {
         return !isEmpty(collection);
     }
@@ -41,4 +47,27 @@ public final class DNACollectionUtils {
     }
 
 
+    /*
+     * =================== LIST ==========================
+     * */
+
+    public static List<?> emptyList() {
+        return Collections.emptyList();
+    }
+
+
+    /*
+     * =================== SET ==========================
+     * */
+    public static Set<?> emptySet() {
+        return Collections.emptySet();
+    }
+
+
+    /*
+     * =================== MAP ==========================
+     * */
+    public static Map<?, ?> emptyMap() {
+        return Collections.emptyMap();
+    }
 }

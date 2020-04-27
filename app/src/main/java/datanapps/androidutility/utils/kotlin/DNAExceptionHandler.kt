@@ -13,8 +13,8 @@ import android.util.Log
 * This class is responsible to manage exception logs and error of application
 * */
 
-class DNAExceptionHandler internal constructor() {
-    companion object {
+object DNAExceptionHandler  {
+
 
         /**
          * Handle Exception in log and can send to crashlytics
@@ -23,8 +23,8 @@ class DNAExceptionHandler internal constructor() {
          */
         fun handleException(e: Exception?) {
             if (e != null) {
-                Log.e("DNA", e.message)
-//Crashlytics.logException(e);
+                Log.e("DNA", e.message!!)
+                    //Crashlytics.logException(e);
             }
         }
 
@@ -35,8 +35,8 @@ class DNAExceptionHandler internal constructor() {
          */
         fun handleException(e: Error?) {
             if (e != null) {
-                Log.e("DNA", e.message)
-//Crashlytics.logException(e);
+                Log.e("DNA", e.message!!)
+                        //Crashlytics.logException(e);
             }
         }
 
@@ -48,8 +48,8 @@ class DNAExceptionHandler internal constructor() {
         fun handleException(errorValue: String?) {
             if (errorValue != null) {
                 Log.e("DNA", errorValue)
-//Crashlytics.logException(errorValue);
+               //Crashlytics.logException(errorValue);
             }
         }
-    }
+
 }

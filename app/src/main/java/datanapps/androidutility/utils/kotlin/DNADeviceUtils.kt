@@ -14,13 +14,11 @@ import android.os.Build
 * All device detail:
 *
 * */
-class DNADeviceUtils
+object DNADeviceUtils {
 /*
      * This included because, sonar raise create bug each class should have constructor
      * */
-internal constructor()// nothing to do here
-{
-    companion object {
+
 
         /*
     * device serial no
@@ -118,7 +116,7 @@ internal constructor()// nothing to do here
      * */
         val versionRelease: String
             get() = Build.VERSION.RELEASE
-    }
+
 
 
 }

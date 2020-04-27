@@ -11,12 +11,12 @@ import datanapps.androidutility.BuildConfig
  * */
 
 
-class DNAAppUtils {
+object DNAAppUtils {
 /*
      * This included because, sonar raise create bug each class should have constructor
      * */
 
-    companion object {
+
 
         /*
     * Application Version name
@@ -59,8 +59,8 @@ class DNAAppUtils {
      *
      * Application build type
      * */
-        val isBuildType: Boolean
+        val isDebug: Boolean
             get() = BuildConfig.DEBUG
-    }
+
 
 }

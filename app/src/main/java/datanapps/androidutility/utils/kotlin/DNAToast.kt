@@ -12,11 +12,11 @@ import android.widget.Toast
  * */
 
 
-class DNAToast {
+object DNAToast {
     /*
          * This included because, sonar raise create bug each class should have constructor
          * */
-    companion object {
+
 
 
         var toast: Toast? = null
@@ -42,4 +42,4 @@ class DNAToast {
             get() = Toast.LENGTH_LONG
     }
 
-}
+

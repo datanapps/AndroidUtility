@@ -20,9 +20,9 @@ import com.google.android.material.snackbar.Snackbar
  * */
 
 
-class DNASnackBar {
+object DNASnackBar {
 
-    companion object {
+
 
         fun show(activity: Activity?, msg: String) {
 
@@ -69,24 +69,12 @@ class DNASnackBar {
 
 
         // for styling view and action color action
-        fun show(view: View?, viewBgColor: Int, colorOfMessage: Int, snackBarMsg: String, isCapsMesg: Boolean, messageSize: Int, actionTextColor: Int, actionText: String, clickListener: View.OnClickListener) {
+        fun show(view: View?, viewBgColor: Int, snackBarMsg: String, actionTextColor: Int, actionText: String, clickListener: View.OnClickListener) {
             if (view != null) {
                 val snackbar = Snackbar.make(view, validateString(snackBarMsg), Snackbar.LENGTH_LONG)
                 val snackbarView : View = snackbar.view
-
-                // styling for rest of text
-
-               /* val textView : TextView = snackbarView.findViewById(android.support.design.R.id.snackbar_text)
-                textView.setTextColor(colorOfMessage)
-                textView.setAllCaps(isCapsMesg)
-                textView.setTextSize((if (messageSize < 10) 20 else messageSize).toFloat())*/
-
-
-                // styling for background of snackbar
-
+                 // styling for background of snackbar
                 snackbarView.setBackgroundColor(viewBgColor)
-
-
                 //styling for action of text
                 snackbar.setActionTextColor(actionTextColor)
                 snackbar.setAction(actionText, clickListener).show()
@@ -100,4 +88,5 @@ class DNASnackBar {
         }
     }
 
-}
+
+
