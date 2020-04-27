@@ -377,7 +377,7 @@ JAVA/KOTLIN :
 
 
   
- [![See](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png)](https://www.paypal.me/datanappspaynow)
+ [[GO](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png){:target="_blank"}(https://www.paypal.me/datanappspaynow)
 
   ### License
 
