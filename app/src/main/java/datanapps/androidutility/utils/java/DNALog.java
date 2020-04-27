@@ -25,36 +25,110 @@ public class DNALog {
     /*
     * Debug
     * */
+
+    public static void d(String tag, String msg) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.d(tag, validateString(msg));
+        }
+    }
+
     public static void d(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.d(TAG, validateString(msg));
         }
     }
 
+    public static void d(String msg, Throwable throwable) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.d(TAG,  validateString(msg), throwable);
+        }
+    }
+
+    public static void d(String msg, Error error) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.d(TAG,  validateString(msg), error);
+        }
+    }
+
     /*
      * ERROR
      * */
+
+    public static void e(String tag, String msg) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.e(tag, validateString(msg));
+        }
+    }
+
     public static void e(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.e(TAG,  validateString(msg));
         }
     }
 
+    public static void e(String msg, Throwable throwable) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.e(TAG,  validateString(msg), throwable);
+        }
+    }
+
+    public static void e(String msg, Error error) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.e(TAG,  validateString(msg), error);
+        }
+    }
+
     /*
      * INFO
      * */
+
+    public static void i(String tag, String msg) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.i(tag, validateString(msg));
+        }
+    }
     public static void i(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.i(TAG,  validateString(msg));
         }
     }
 
+    public static void i(String msg, Throwable throwable) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.i(TAG,  validateString(msg), throwable);
+        }
+    }
+
+
+    public static void i(String msg, Error error) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.i(TAG,  validateString(msg), error);
+        }
+    }
+
 /*
 * VERBOSE
 * */
+public static void v(String tag, String msg) {
+    if (BuildConfig.DEBUG) {
+        android.util.Log.v(tag, validateString(msg));
+    }
+}
     public static void v(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.v(TAG,  validateString(msg));
+        }
+    }
+
+    public static void v(String msg, Throwable throwable) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.v(TAG,  validateString(msg), throwable);
+        }
+    }
+
+    public static void v(String msg, Error error) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.v(TAG,  validateString(msg), error);
         }
     }
 
@@ -62,9 +136,27 @@ public class DNALog {
     /*
      * WARNING
      * */
+
+    public static void w(String tag, String msg) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.w(tag, validateString(msg));
+        }
+    }
     public static void w(String msg) {
         if (BuildConfig.DEBUG) {
             android.util.Log.w(TAG,  validateString(msg));
+        }
+    }
+
+    public static void w(String msg, Throwable throwable) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.w(TAG,  validateString(msg), throwable);
+        }
+    }
+
+    public static void w(String msg, Error error) {
+        if (BuildConfig.DEBUG) {
+            android.util.Log.w(TAG,  validateString(msg), error);
         }
     }
 
