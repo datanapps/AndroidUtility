@@ -376,7 +376,7 @@ JAVA/KOTLIN :
       Battery Temperature: 25.8
 
 
-   ####<a href="https://www.paypal.me/datanappspaynow" target="_blank">BUY ME A BEER</a>
+   ** <a href="https://www.paypal.me/datanappspaynow" target="_blank">BUY ME A BEER</a> **
  
  
  
