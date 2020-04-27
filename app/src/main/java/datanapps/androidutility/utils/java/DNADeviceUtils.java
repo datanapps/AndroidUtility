@@ -105,8 +105,8 @@ public class DNADeviceUtils {
     /*
      * device version SDK code
      * */
-    public static String getSDKVersion() {
-        return Build.VERSION.SDK;
+    public static int getSDKVersion() {
+        return Build.VERSION.SDK_INT;
     }
 
 

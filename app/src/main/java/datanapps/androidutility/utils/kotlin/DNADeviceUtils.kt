@@ -88,8 +88,8 @@ internal constructor()// nothing to do here
         /*
      * device version SDK code
      * */
-        val sdkVersion: String
-            get() = Build.VERSION.SDK
+        val sdkVersion: Int
+            get() = Build.VERSION.SDK_INT
 
 
         /*
