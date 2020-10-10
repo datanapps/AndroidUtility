@@ -376,7 +376,9 @@ JAVA/KOTLIN :
       Battery Temperature: 25.8
 
  If you think this library is useful, please press the star button at the top.
-  [![See](https://datanapps.com/public/dnarestapi/githubstar.png)]
+ 
+ <img src="https://datanapps.com/public/dnarestapi/githubstar.png " height="50" width="100">
+ 
  [![See](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png)](https://www.paypal.me/datanappspaynow)
 
   ### License
