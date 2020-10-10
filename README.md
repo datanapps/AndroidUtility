@@ -375,8 +375,8 @@ JAVA/KOTLIN :
       Battery Voltage: 4186
       Battery Temperature: 25.8
 
-
-  
+ If you think this library is useful, please press the star button at the top.
+  [![See](https://datanapps.com/public/dnarestapi/githubstar.png)]
  [![See](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png)](https://www.paypal.me/datanappspaynow)
 
   ### License
