@@ -377,7 +377,9 @@ JAVA/KOTLIN :
 
  If you think this library is useful, please press the star button at the top.
  
- <img src="https://datanapps.com/public/dnarestapi/githubstar.png " height="50" width="100">
+ <img src="https://datanapps.com/public/dnarestapi/githubstar.png" height="50" width="100">
+ 
+ 
  
  [![See](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png)](https://www.paypal.me/datanappspaynow)
 
