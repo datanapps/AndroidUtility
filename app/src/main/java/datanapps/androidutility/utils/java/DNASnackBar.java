@@ -21,14 +21,14 @@ import com.google.android.material.snackbar.Snackbar;
  * */
 
 
-public class DNASnackBar {
+public class DNASnackbar {
 
 
     /*
      * This included because, sonar raise create bug each class should have constructor
      * */
 
-    DNASnackBar() {
+    DNASnackbar() {
         // nothing to do here
     }
 
