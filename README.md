@@ -1,5 +1,10 @@
-# AndroidUtility (Java) (Kotlin)
+# AndroidUtility (Kotlin extension) 
 
+**1. String**
+
+---------------------------------------
+
+# AndroidUtility (Java) 
 
 **This library contain:**
 
