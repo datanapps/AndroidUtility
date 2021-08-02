@@ -1,6 +1,6 @@
 # AndroidUtility (Kotlin extension) 
 
-**1. String**
+**1. StringUtils**
 
 ---------------------------------------
 
